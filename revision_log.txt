@@ -1,0 +1,14 @@
+As of 11/27:
+
+Things to note:
+
+-Data has been parsed using the Python script as promised, there are 2
+"polished" files "ROUTES_clean.txt" and "IATA_clean.txt". We take these
+and use them in our world (graph class) constructor, where we have 2 maps.
+-The first map assigns any airport name to its unique identifier # from
+OpenFlights (ie. ORD and KORD both map to 3830), and the second map
+assigns the unique identifier # to a vector of unique identifier #'s
+representing where a flight's directed route leads to.
+-The vector of identifier #'s has also been dealt with to remove any
+duplicate entries for freeing memory and also to avoid confusion during
+any traversal (just in case).
