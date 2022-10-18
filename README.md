@@ -2,6 +2,8 @@
 
 Implementation of 2 popular graph search algorithms to search for the least number of stops from the source (BFS) and to search for the shortest travelled mileage distance from the source (Dijkstra's Algorithm), and at the end of the route processing the program  will return the path discovered (if it exists), as well as a .gif visual of the path taken from the source to the destination.
 
+Yeah, this was for the CS225 final project.
+
 ## 1. Introduction to the Code
 
 The first step to running the program is to downloading all the code and datasets used! This can be done using the command line below:
