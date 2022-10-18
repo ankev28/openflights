@@ -1,6 +1,6 @@
 # OpenFlights Airport Search Visualizaiton
 
-Implementation of 2 popular graph search algorithms to search for the least number of stops from the source (BFS) and to search for the shortest travelled mileage distance from the source (Dijkstra's Algorithm), and at the end of the route processing the program  will return the path discovered (if it exists), as well as a .gif visual of the path taken from the source to the destination.
+Implementation of 2 popular graph search algorithms to search for the fewest number of stops from the source (using BFS) and to search for the shortest travelled mileage distance from the source (using Dijkstra's Algorithm). At the end of the route processing the program will return the path discovered (if it exists), as well as a .gif visual of the path taken from the source to the destination.
 
 Yeah, this was for the CS225 final project.
 
@@ -20,12 +20,12 @@ What's important:
   * animation.h/animation.cpp: the provided animation class, used for the graphic deliverable.
   * graphic.h/graphic.cpp: the graphic class, which creates a visual of the path traversal taken upon completion of the route discovery by the program. The gif output will be saved to **ROUTE_PATH.gif** in the same directory as the project is located in.
   * Makefile: used to compile the program (usage explained later)
-  * map.png: base image of map the program uses to draw the graphic on (called an Equidistant Cylindrical Projection)
+  * map.png: base image of map the program uses to draw the graphic on (called an Equidistant Cylindrical Projection). This is the only one I found on Google that works.
   * tests: testcases used throughout production of the project itself
 
 ## 2. Build and Run
 
-The next step to running the project code is to compile the code using the line below:
+The next step to running the project code is to compile the code using the line below (assuming you already have GCC compiler installed):
 
 `make`
 
